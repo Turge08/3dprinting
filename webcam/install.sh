@@ -12,5 +12,7 @@ cd mjpg-streamer/mjpg-streamer-experimental
 make
 sudo make install
 
-wget https://raw.githubusercontent.com/Turge08/3dprinting/master/webcam/stream.sh 
-
+sudo wget https://raw.githubusercontent.com/Turge08/3dprinting/master/webcam/stream.sh -P /etc/init.d/
+sudo chmod 755 /etc/init.d/stream.sh
+sudo update-rc.d stream.sh defaults
+sudo service stream start
