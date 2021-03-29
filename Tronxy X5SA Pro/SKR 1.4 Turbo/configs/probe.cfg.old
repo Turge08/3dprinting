@@ -1,0 +1,8 @@
+[probe]
+x_offset: -40
+y_offset: -7
+pin: !P1.27
+speed: 10
+lift_speed: 100
+z_offset: 2.25
+samples: 1
